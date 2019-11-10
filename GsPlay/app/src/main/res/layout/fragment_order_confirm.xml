@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/empty_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="没有任何数据"
+        android:textColor="@color/primary_red"
+        android:textSize="@dimen/table_status_selected"
+        android:visibility="gone" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.limxing.xlistview.view.XListView
+            android:id="@+id/list_order_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/grey_two"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <!--<in.srain.cube.views.ptr.PtrFrameLayout-->
+    <!--android:id="@+id/refresh_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="gone"-->
+    <!--cube_ptr:ptr_resistance="1.7">-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<ListView-->
+    <!--android:id="@+id/list_order_confirm"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:divider="@color/grey_two"-->
+    <!--android:dividerHeight="1dp"-->
+    <!--android:scrollbars="none" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/empty"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--andrtableNametext="没有任何数据"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:textColor="@color/primary_red"-->
+    <!--android:textSize="@dimen/table_status_selected" />-->
+
+    <!--</FrameLayout>-->
+
+    <!--</in.srain.cube.views.ptr.PtrFrameLayout>-->
+
+
+</RelativeLayout>

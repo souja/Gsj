@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_popu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_popu_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_tv_height"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:gravity="center_vertical"
+            android:text="请选择桌号"
+            android:textColor="@color/pinkish_grey"
+            android:textSize="@dimen/title_tv_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_popu_title2"
+            android:textSize="@dimen/title_tv_size"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="请在以下列表选择桌号"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/pinkish_grey" />
+
+        <ListView
+            android:id="@+id/lv_select_card"
+            android:layout_width="match_parent"
+            android:scrollbarStyle="@null"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

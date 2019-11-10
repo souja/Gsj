@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_cardconfig"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.wangxiaobao.gsj.view.TitleBar
+        android:id="@+id/titleview_cardconfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:background="@color/white_three"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:text="选择桌号" />
+
+    <ImageView
+        android:layout_width="@dimen/card_bg_height"
+        android:layout_height="@dimen/card_bg_height"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_round_grey"
+        android:scaleType="center"
+        android:src="@drawable/wang_card" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="9dp"
+        android:text="@string/card_deviceId"
+        android:textColor="@color/pinkish_grey"
+        android:textSize="@dimen/table_status_not_selected" />
+
+    <TextView
+        android:id="@+id/tv_cardconfig_deivce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="WZP847854512"
+        android:textColor="@color/black_three"
+        android:textSize="@dimen/table_status_not_selected" />
+
+
+    <com.wangxiaobao.gsj.view.MySpinner
+        android:id="@+id/sp_select_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_tv_height"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginTop="10.5dp"></com.wangxiaobao.gsj.view.MySpinner>
+
+    <Button
+        android:id="@+id/bt_bind_table"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_tv_height"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/tv_bind_card"
+        android:text="确认绑定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/table_status_selected" />
+</LinearLayout>

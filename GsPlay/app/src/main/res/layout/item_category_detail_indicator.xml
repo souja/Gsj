@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_food_mgr_category_name"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:background="@color/divider_color"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:text="主分类"
+    android:textColor="@color/warm_grey"
+    android:textSize="12sp" />

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/grey_three"
+    android:minHeight="50dp"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/indicator_divider"
+        android:layout_width="3dp"
+        android:background="@color/pinkish_grey"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/table_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="12dp"
+            android:text="A01"
+            android:textColor="@color/black"
+            android:maxLength="8"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp">
+
+            <TextView
+                android:id="@+id/order_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-12-8"
+                android:textColor="#888888"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="100"
+                android:textColor="#888888"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tallest_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最高到店次数"
+            android:textSize="14sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/scan_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="５人扫码"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="right"
+            android:textSize="10sp"
+            android:textColor="#888888" />
+    </LinearLayout>
+
+</RelativeLayout>
+

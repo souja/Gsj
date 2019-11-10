@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <include layout="@layout/item_merchant_location" />
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="111px"
+                android:text="感觉怎么样，打个分吧"
+                android:textColor="@color/font_black"
+                android:textSize="45px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_bg" />
+
+            <com.hedgehog.ratingbar.RatingBar
+                android:id="@+id/rateBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90px"
+                app:clickable="true"
+                app:halfstart="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rate"
+                app:starCount="5"
+                app:starEmpty="@drawable/icon_rating_star_unselected"
+                app:starFill="@drawable/icon_rating_start_selected"
+                app:starImageHeight="50dp"
+                app:starImagePadding="13dp"
+                app:starImageWidth="50dp" />
+
+            <TextView
+                android:id="@+id/tv_rate_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="60px"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="比较满意，可以优化"
+                android:textColor="@color/five_grey"
+                android:textSize="36px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rateBar" />
+
+            <LinearLayout
+                android:id="@+id/llContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="90px"
+                android:layout_marginRight="60px"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_rate_result" />
+
+            <View
+                android:id="@+id/view_bg_name"
+                android:layout_width="0dp"
+                android:layout_height="147px"
+                android:layout_marginTop="48px"
+                android:background="@drawable/grey_solid_with_radius_bg"
+                app:layout_constraintLeft_toLeftOf="@id/llContainer"
+                app:layout_constraintRight_toRightOf="@id/llContainer"
+                app:layout_constraintTop_toBottomOf="@id/llContainer" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="48px"
+                android:background="@null"
+                android:hint="姓名"
+                android:maxLines="1"
+                android:textSize="27px"
+                app:layout_constraintBottom_toBottomOf="@id/view_bg_name"
+                app:layout_constraintLeft_toLeftOf="@id/view_bg_name"
+                app:layout_constraintRight_toRightOf="@id/view_bg_name"
+                app:layout_constraintTop_toTopOf="@id/view_bg_name" />
+
+
+            <TextView
+                android:id="@+id/tvCommitComment"
+                android:layout_width="0dp"
+                android:layout_height="147px"
+                android:layout_marginTop="90px"
+                android:background="@drawable/drawable_commit_comment_bg"
+                android:gravity="center"
+                android:text="提交评价"
+                android:textColor="@color/white"
+                android:textSize="30px"
+                app:layout_constraintLeft_toLeftOf="@id/llContainer"
+                app:layout_constraintRight_toRightOf="@id/llContainer"
+                app:layout_constraintTop_toBottomOf="@id/etName" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48px"
+                android:paddingBottom="30px"
+                android:gravity="center"
+                android:text="为了打造良好的消费者环境，\n\n本评价内容会同步给成都市市场监管局。"
+                android:textSize="21px"
+                app:layout_constraintLeft_toLeftOf="@id/llContainer"
+                app:layout_constraintRight_toRightOf="@id/llContainer"
+                app:layout_constraintTop_toBottomOf="@id/tvCommitComment" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_switchBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="90px"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="60px"
+        android:layout_marginBottom="420px"
+        android:background="@drawable/alpha_black_radius_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:paddingTop="15px"
+        android:paddingRight="30px"
+        android:paddingBottom="15px">
+
+        <ImageView
+            android:layout_width="27px"
+            android:layout_height="28px"
+            android:background="@drawable/icon_merchant_switch" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12px"
+            android:includeFontPadding="false"
+            android:text="切换商家"
+            android:textColor="@color/white"
+            android:textSize="27px" />
+
+    </LinearLayout>
+
+</FrameLayout>

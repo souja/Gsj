@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/iv_voice_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.5dp"
+        android:src="@drawable/icon_voice_small"
+        app:layout_constraintLeft_toLeftOf="@id/tv_user_name"
+        app:layout_constraintTop_toBottomOf="@id/comment" />
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/grey_solid_bg"
+        app:layout_constraintBottom_toBottomOf="@id/tv_turn_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_voice_icon" />
+
+    <TextView
+        android:id="@+id/tv_voice_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="14dp"
+        android:text="语音转文字:"
+        android:textColor="@color/deep_green"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_bg" />
+
+    <TextView
+        android:id="@+id/tv_turn_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="22dp"
+        android:paddingBottom="14dp"
+        android:textColor="@color/font_black"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_voice_turn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_voice_turn"
+        tools:text="点了一点点东西，服务员态度非常恶劣。我拿几个袋子怎么了？" />
+
+</android.support.constraint.ConstraintLayout>

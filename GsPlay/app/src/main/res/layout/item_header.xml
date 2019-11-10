@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:background="@drawable/wang_top"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_func"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_tv_size"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_food_manage"
+                android:layout_width="@dimen/header_tv_size"
+                android:layout_height="@dimen/header_tv_size"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/header_tv_padding"
+                android:drawableTop="@drawable/wang_food"
+                android:gravity="center"
+                android:paddingTop="@dimen/header_tv_top"
+                android:text="@string/food_manager"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_tv_size" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_scan"
+                android:layout_width="@dimen/header_tv_size"
+                android:layout_height="@dimen/header_tv_size"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/header_tv_padding"
+                android:drawableTop="@drawable/wang_scan"
+                android:gravity="center"
+                android:paddingTop="@dimen/header_tv_top"
+                android:text="@string/san"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_tv_size" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_card_manager"
+                android:layout_width="@dimen/header_tv_size"
+                android:layout_height="@dimen/header_tv_size"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/header_tv_padding"
+                android:drawableTop="@drawable/wang_card"
+                android:gravity="center"
+                android:paddingTop="@dimen/header_tv_top"
+                android:text="@string/card_manager"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_tv_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@id/ll_func" />
+</RelativeLayout>

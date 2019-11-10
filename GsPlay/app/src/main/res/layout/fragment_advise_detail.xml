@@ -1,0 +1,84 @@
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/drawable_rec_solid_corner_5_grey"
+            android:hint="请输入意见内容，最多可以输入200个字"
+            android:maxEms="200"
+            android:gravity="top"
+            android:layout_marginTop="100dp"
+            android:textColorHint="#999999"
+            android:textColor="#FF323232"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+
+            android:paddingRight="10dp"
+            android:maxLength="200" />
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/drawable_rec_solid_corner_5_grey"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColorHint="#999999"
+            android:textColor="#FF323232"
+            android:maxLength="10"
+            android:hint="姓名" />
+
+
+        <com.wangxiaobao.gsj.view.StateButton
+
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_tv_height"
+
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            android:text="提交意见"
+            android:textColor="@color/white"
+            android:textSize="@dimen/table_status_selected"
+            app:normalBackgroundColor="#1AAD19"
+            app:normalTextColor="@color/white"
+            app:pressedBackgroundColor="@color/primary_text_color"
+            app:radius="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="为了打造良好的消费者环境,\n
+本建议内容会同步给成都市市场监管局。"
+            android:layout_marginTop="30dp"
+            android:textColor="#FF323232"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

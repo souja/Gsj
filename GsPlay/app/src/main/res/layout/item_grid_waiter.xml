@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="62.5dp"
+    android:id="@+id/tv_gv_waiter"
+    android:drawableTop="@drawable/drawable_item_waiter_image"
+    android:gravity="center_horizontal"
+    android:paddingTop="12dp"
+    android:background="@drawable/drawable_item_waiter_bg"
+    android:textSize="12sp"
+    android:text="李晨涛"
+    android:drawablePadding="8dp"
+    android:paddingBottom="6dp"
+    android:textColor="@drawable/drawable_item_waiter_text_color"
+    android:layout_height="62.5dp"
+    android:orientation="vertical"></TextView>

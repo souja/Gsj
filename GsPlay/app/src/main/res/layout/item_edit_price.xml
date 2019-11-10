@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:minHeight="50dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/price_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_weight="3"
+        android:layout_gravity="center_vertical"
+        android:text="会员:" />
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="8"
+        android:layout_toLeftOf="@+id/st_set_price_display"
+        android:layout_toRightOf="@+id/price_name"
+        android:background="@drawable/drawable_stroke_grey"
+        android:layout_gravity="center_vertical"
+       >
+
+        <EditText
+            android:id="@+id/edit_price"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/price_unit"
+            android:inputType="number"
+            android:paddingLeft="5dp"
+            android:digits="0123456789."
+            android:background="@null" />
+
+
+        <TextView
+            android:id="@+id/price_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="￥" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/st_set_price_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_weight="4"
+        android:layout_gravity="center_vertical"
+        android:text="显示" />
+
+</LinearLayout>
+

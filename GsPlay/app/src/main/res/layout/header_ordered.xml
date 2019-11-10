@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="@dimen/lv_item_height">
+<RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/lv_item_height">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_order_header_tips1"
+        android:text="订单号:005"
+        android:textColor="@color/warm_grey"
+        android:textSize="@dimen/title_tv_size" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_order_header_tips2"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:text="共4份    1号桌"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:textColor="@color/warm_grey"
+        android:textSize="@dimen/title_tv_size" />
+    </RelativeLayout>
+</LinearLayout>

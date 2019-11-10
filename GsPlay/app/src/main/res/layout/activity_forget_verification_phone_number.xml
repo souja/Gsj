@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <com.wangxiaobao.gsj.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:right_visibility="false"
+        app:waiter_title="输入验证码" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="16dp"
+        android:text="为确保是你本人操作，请完成手机验证"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/five_grey"
+        android:layout_marginLeft="14dp"
+        android:layout_gravity="center_horizontal"
+        android:text="我们已发送了验证码到你的手机："
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/five_grey"
+        android:layout_marginLeft="14dp"
+        android:text="136*****028"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content" />
+    
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_marginTop="17dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="请输入6位验证码"
+        android:textSize="20sp"
+        android:text="123456"
+        android:textColor="@color/black"
+        android:layout_height="50dp">
+
+    </android.support.v7.widget.AppCompatEditText>
+
+
+    <TextView
+        android:id="@+id/re_get_verification_code_time"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/five_grey"
+        android:layout_marginLeft="14dp"
+        android:text="重新获取(56秒)"
+        android:layout_marginTop="27dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <com.wangxiaobao.gsj.view.StateButton
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_tv_height"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_marginTop="20dp"
+        android:text="下一步"
+        android:textSize="16sp"
+        app:pressedBackgroundColor="@color/primary_text_color"
+        app:normalBackgroundColor="@color/pinkish_grey"
+        app:normalTextColor="@color/white"
+        app:radius="10dp" />
+
+
+</LinearLayout>

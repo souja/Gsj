@@ -1,0 +1,443 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="username">名称</string>
+    <string name="bind_table_card">绑定桌牌</string>
+    <string name="help">使用帮助</string>
+    <string name="more">更多</string>
+    <string name="title">旺助手</string>
+    <string name="food_manager">菜品管理</string>
+    <string name="card_manager">桌牌管理</string>
+    <string name="san">扫一扫</string>
+    <string name="all">全部</string>
+    <string name="daiqueding">待确定</string>
+    <string name="eating">就餐中</string>
+    <string name="idle">空闲</string>
+    <string name="all_waiter">全部服务员</string>
+    <string name="table_no">x号桌</string>
+    <string name="login">立即登录</string>
+    <string name="about_us">关于我们</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="card_deviceId">桌牌设备号</string>
+    <string name="waiter">服务员</string>
+    <string name="cardNo">桌号</string>
+    <string name="loading">正在登陆</string>
+    <string name="ordered">已下单</string>
+    <string name="unorder">待下单</string>
+    <string name="addfood">加菜</string>
+    <string name="bind_table_error">不能绑定其他商户桌牌</string>
+    <string name="insufficient_permission">扫描到桌牌，但权限不够</string>
+    <string name="dish_count">%s道菜</string>
+    <string name="title_table_no">%s号桌</string>
+    <string name="txt_next_order">确认订单&amp;下一单</string>
+    <string name="total_collection_order_tip">共计%1$s道菜 ￥%2$s</string>
+    <string name="contain_order_tip">此桌还有%s个订单的菜品未确认。此款是否包含此订单？不包含则此订单作废</string>
+    <string name="hide">隐藏</string>
+    <string name="display">显示</string>
+    <array name="units">
+        <item>份</item>
+        <item>只</item>
+        <item>杯</item>
+        <item>斤</item>
+        <item>瓶</item>
+        <item>个</item>
+        <item>位</item>
+        <item>例</item>
+    </array>
+
+
+    <array name="service_type_array">
+        <item>午餐</item>
+        <item>晚餐</item>
+        <item>夜宵</item>
+        <item>早餐</item>
+    </array>
+
+
+    <!--  PrinterListActivity -->
+    <string name="scanning">扫描设备...</string>
+    <string name="select_device">选择连接的设备</string>
+    <string name="none_paired">没有匹配的设备</string>
+    <string name="none_found">没有找到设备</string>
+    <string name="title_paired_devices">已匹配设备</string>
+    <string name="title_other_devices">其它可用设备</string>
+    <string name="button_scan">扫描设备</string>
+
+
+    <string name="title_connecting">正在连接...</string>
+    <string name="title_connected_to">已连接: </string>
+    <string name="title_not_connected">没有连接</string>
+    <string name="bt_not_enabled_leaving">蓝牙没有启动，退出程序</string>
+    <string name="print_count_tip">第%1$s次打印</string>
+    <string name="print_detail_order_id_tip">打印单号:%s</string>
+    <string name="print_print_time_tip">打印时间:%s</string>
+    <string name="print_order_time_tip">下单时间:%s</string>
+    <string name="dish_description_hint">请输入菜品描述</string>
+    <string name="dish_package_description_hint">请输入套餐描述</string>
+
+    <string name="finish">完成</string>
+
+
+    <!--update-->
+
+
+    <string name="strToastYourAreTheLatestVersion">你已经是最新版了</string>
+    <string name="strToastCheckUpgradeError">检查新版本失败，请稍后重试</string>
+    <string name="strToastCheckingUpgrade">正在检查，请稍候...</string>
+    <string name="strNotificationDownloading">正在下载</string>
+    <string name="strNotificationClickToView">点击查看</string>
+    <string name="strNotificationClickToInstall">点击安装</string>
+    <string name="strNotificationClickToRetry">点击重试</string>
+    <string name="strNotificationDownloadSucc">下载完成</string>
+    <string name="strNotificationDownloadError">下载失败</string>
+    <string name="strNotificationHaveNewVersion">有新版本</string>
+    <string name="strNetworkTipsMessage">你已切换到移动网络，是否继续当前下载？</string>
+    <string name="strNetworkTipsTitle">网络提示</string>
+    <string name="strNetworkTipsConfirmBtn">继续下载</string>
+    <string name="strNetworkTipsCancelBtn">取消</string>
+    <string name="strUpgradeDialogVersionLabel">版本</string>
+    <string name="strUpgradeDialogFileSizeLabel">包大小</string>
+    <string name="strUpgradeDialogUpdateTimeLabel">更新时间</string>
+    <string name="strUpgradeDialogFeatureLabel">更新说明</string>
+    <string name="strUpgradeDialogUpgradeBtn">立即更新</string>
+    <string name="strUpgradeDialogInstallBtn">安装</string>
+    <string name="strUpgradeDialogRetryBtn">重试</string>
+    <string name="strUpgradeDialogContinueBtn">继续</string>
+    <string name="strUpgradeDialogCancelBtn">下次再说</string>
+    <string name="cancel_empty_dish">取消沽清(%d)</string>
+    <string name="cancel_recommend_dish">取消推荐(%d)</string>
+    <string name="cancel_empty_tip">取消沽清</string>
+    <string name="cancel_recommend_tip">取消推荐</string>
+    <string name="selected_table_count">你已选择%d桌</string>
+    <string name="all_table_info">全部%d桌</string>
+    <string name="edit_template_text">管理推荐菜</string>
+    <string name="text_add_recommend_dish">添加推荐菜</string>
+    <string name="manage_category">管理分类</string>
+    <string name="home_title">成都消费市场智能服务平台</string>
+    <string name="home_hint">打造放心、舒心、安心利民工程</string>
+
+
+    <string-array name="city_array">
+        <item>北京市</item>
+        <item>天津市</item>
+        <item>上海市</item>
+        <item>重庆市</item>
+        <item>香港特别行政区</item>
+        <item>澳门特别行政区</item>
+        <item>沈阳市</item>
+        <item>大连市</item>
+        <item>鞍山市</item>
+        <item>抚顺市</item>
+        <item>本溪市</item>
+        <item>丹东市</item>
+        <item>锦州市</item>
+        <item>营口市</item>
+        <item>阜新市</item>
+        <item>辽阳市</item>
+        <item>铁岭市</item>
+        <item>朝阳市</item>
+        <item>盘锦市</item>
+        <item>葫芦岛市</item>
+        <item>哈尔滨市</item>
+        <item>齐齐哈尔市</item>
+        <item>鸡西市</item>
+        <item>鹤岗市</item>
+        <item>双鸭山市</item>
+        <item>大庆市</item>
+        <item>伊春市</item>
+        <item>佳木斯市</item>
+        <item>牡丹江市</item>
+        <item>七台河市</item>
+        <item>黑河市</item>
+        <item>长春市</item>
+        <item>吉林市</item>
+        <item>四平市</item>
+        <item>辽源市</item>
+        <item>通化市</item>
+        <item>白山市</item>
+        <item>松原市</item>
+        <item>白城市</item>
+        <item>延吉市</item>
+        <item>呼和浩特市</item>
+        <item>包头市</item>
+        <item>乌海市</item>
+        <item>赤峰市</item>
+        <item>通辽市</item>
+        <item>鄂尔多斯市</item>
+        <item>呼伦贝尔市</item>
+        <item>巴彦淖尔市</item>
+        <item>乌兰察布市</item>
+        <item>乌兰浩特市</item>
+        <item>二连浩特市</item>
+        <item>乌鲁木齐市</item>
+        <item>克拉玛依市</item>
+        <item>吐鲁番市</item>
+        <item>昌吉市</item>
+        <item>博乐市</item>
+        <item>库尔勒市</item>
+        <item>阿克苏市</item>
+        <item>阿图什市</item>
+        <item>喀什市</item>
+        <item>和田市</item>
+        <item>伊宁市</item>
+        <item>塔城市</item>
+        <item>阿勒泰市</item>
+        <item>西宁市</item>
+        <item>拉萨市</item>
+        <item>兰州市</item>
+        <item>嘉峪关市</item>
+        <item>金昌市</item>
+        <item>白银市</item>
+        <item>天水市</item>
+        <item>武威市</item>
+        <item>张掖市</item>
+        <item>平凉市</item>
+        <item>酒泉市</item>
+        <item>庆阳市</item>
+        <item>定西市</item>
+        <item>陇南市</item>
+        <item>临夏市</item>
+        <item>合作市</item>
+        <item>银川市</item>
+        <item>石嘴山市</item>
+        <item>吴忠市</item>
+        <item>固原市</item>
+        <item>中卫市</item>
+        <item>西安市</item>
+        <item>铜川市</item>
+        <item>宝鸡市</item>
+        <item>咸阳市</item>
+        <item>渭南市</item>
+        <item>延安市</item>
+        <item>汉中市</item>
+        <item>榆林市</item>
+        <item>安康市</item>
+        <item>商洛市</item>
+        <item>太原市</item>
+        <item>大同市</item>
+        <item>阳泉市</item>
+        <item>长治市</item>
+        <item>晋城市</item>
+        <item>朔州市</item>
+        <item>晋中市</item>
+        <item>运城市</item>
+        <item>忻州市</item>
+        <item>临汾市</item>
+        <item>吕梁市</item>
+        <item>石家庄市</item>
+        <item>唐山市</item>
+        <item>秦皇岛市</item>
+        <item>邯郸市</item>
+        <item>邢台市</item>
+        <item>保定市</item>
+        <item>承德市</item>
+        <item>沧州市</item>
+        <item>廊坊市</item>
+        <item>衡水市</item>
+        <item>济南市</item>
+        <item>青岛市</item>
+        <item>淄博市</item>
+        <item>枣庄市</item>
+        <item>东营市</item>
+        <item>烟台市</item>
+        <item>潍坊市</item>
+        <item>济宁市</item>
+        <item>泰安市</item>
+        <item>威海市</item>
+        <item>日照市</item>
+        <item>莱芜市</item>
+        <item>临沂市</item>
+        <item>德州市</item>
+        <item>聊城市</item>
+        <item>滨州市</item>
+        <item>菏泽市</item>
+        <item>南京市</item>
+        <item>无锡市</item>
+        <item>徐州市</item>
+        <item>常州市</item>
+        <item>苏州市</item>
+        <item>南通市</item>
+        <item>连云港市</item>
+        <item>淮安市</item>
+        <item>盐城市</item>
+        <item>扬州市</item>
+        <item>镇江市</item>
+        <item>泰州市</item>
+        <item>宿迁市</item>
+        <item>合肥市</item>
+        <item>芜湖市</item>
+        <item>蚌埠市</item>
+        <item>淮南市</item>
+        <item>马鞍山市</item>
+        <item>淮北市</item>
+        <item>铜陵市</item>
+        <item>安庆市</item>
+        <item>黄山市</item>
+        <item>滁州市</item>
+        <item>阜阳市</item>
+        <item>宿州市</item>
+        <item>巢湖市</item>
+        <item>六安市</item>
+        <item>毫州市</item>
+        <item>池州市</item>
+        <item>宣城市</item>
+        <item>郑州市</item>
+        <item>开封市</item>
+        <item>洛阳市</item>
+        <item>平顶山市</item>
+        <item>安阳市</item>
+        <item>鹤壁市</item>
+        <item>新乡市</item>
+        <item>焦作市</item>
+        <item>濮阳市</item>
+        <item>许昌市</item>
+        <item>漯河市</item>
+        <item>三门峡市</item>
+        <item>南阳市</item>
+        <item>商丘市</item>
+        <item>信阳市</item>
+        <item>周口市</item>
+        <item>驻马店市</item>
+        <item>武汉市</item>
+        <item>黄石市</item>
+        <item>十堰市</item>
+        <item>宜昌市</item>
+        <item>襄樊市</item>
+        <item>鄂州市</item>
+        <item>荆门市</item>
+        <item>孝感市</item>
+        <item>荆州市</item>
+        <item>黄冈市</item>
+        <item>咸宁市</item>
+        <item>随州市</item>
+        <item>恩施市</item>
+        <item>成都市</item>
+        <item>自贡市</item>
+        <item>攀枝花市</item>
+        <item>泸州市</item>
+        <item>德阳市</item>
+        <item>绵阳市</item>
+        <item>广元市</item>
+        <item>遂宁市</item>
+        <item>内江市</item>
+        <item>乐山市</item>
+        <item>南充市</item>
+        <item>眉山市</item>
+        <item>宜宾市</item>
+        <item>内广安市</item>
+        <item>达州市</item>
+        <item>雅安市</item>
+        <item>巴中市</item>
+        <item>资阳市</item>
+        <item>昆明市</item>
+        <item>曲靖市</item>
+        <item>玉溪市</item>
+        <item>保山市</item>
+        <item>昭通市</item>
+        <item>丽江市</item>
+        <item>思茅市</item>
+        <item>临沧市</item>
+        <item>贵阳市</item>
+        <item>六盘水市</item>
+        <item>遵义市</item>
+        <item>安顺市</item>
+        <item>铜仁市</item>
+        <item>兴义市</item>
+        <item>毕节市</item>
+        <item>凯里市</item>
+        <item>都匀市</item>
+        <item>长沙市</item>
+        <item>株洲市</item>
+        <item>湘潭市</item>
+        <item>衡阳市</item>
+        <item>邵阳市</item>
+        <item>岳阳市</item>
+        <item>常德市</item>
+        <item>张家界市</item>
+        <item>益阳市</item>
+        <item>郴州市</item>
+        <item>永州市</item>
+        <item>怀化市</item>
+        <item>娄底市</item>
+        <item>吉首市</item>
+        <item>南昌市</item>
+        <item>萍乡市</item>
+        <item>九江市</item>
+        <item>新余市</item>
+        <item>鹰潭市</item>
+        <item>赣州市</item>
+        <item>吉安市</item>
+        <item>宜春市</item>
+        <item>抚州市</item>
+        <item>上饶市</item>
+        <item>杭州市</item>
+        <item>宁波市</item>
+        <item>温州市</item>
+        <item>嘉兴市</item>
+        <item>湖州市</item>
+        <item>绍兴市</item>
+        <item>金华市</item>
+        <item>衢州市</item>
+        <item>舟山市</item>
+        <item>台州市</item>
+        <item>丽水市</item>
+        <item>福州市</item>
+        <item>厦门市</item>
+        <item>莆田市</item>
+        <item>三明市</item>
+        <item>泉州市</item>
+        <item>漳州市</item>
+        <item>南平市</item>
+        <item>龙岩市</item>
+        <item>宁德市</item>
+        <item>广州市</item>
+        <item>韶关市</item>
+        <item>深圳市</item>
+        <item>珠海市</item>
+        <item>汕头市</item>
+        <item>佛山市</item>
+        <item>江门市</item>
+        <item>湛江市</item>
+        <item>茂名市</item>
+        <item>肇庆市</item>
+        <item>惠州市</item>
+        <item>梅州市</item>
+        <item>汕尾市</item>
+        <item>河源市</item>
+        <item>阳江市</item>
+        <item>清远市</item>
+        <item>东莞市</item>
+        <item>中山市</item>
+        <item>潮州市</item>
+        <item>揭阳市</item>
+        <item>云浮市</item>
+        <item>南宁市</item>
+        <item>柳州市</item>
+        <item>桂林市</item>
+        <item>梧州市</item>
+        <item>北海市</item>
+        <item>防城港市</item>
+        <item>钦州市</item>
+        <item>贵港市</item>
+        <item>玉林市</item>
+        <item>百色市</item>
+        <item>贺州市</item>
+        <item>河池市</item>
+        <item>来宾市</item>
+        <item>崇左市</item>
+        <item>海口市</item>
+        <item>三亚市</item>
+        <item>台北市</item>
+        <item>高雄市</item>
+        <item>台中市</item>
+        <item>123</item>
+    </string-array>
+
+    <string name="people_number">%1$d 人</string>
+    <string name="good_comment">好评:%1$d</string>
+    <string name="medium_comment">中评:%1$d</string>
+    <string name="bad_comment">差评:%1$d</string>
+    <string name="str_count_down">%1$ss后自动关闭</string>
+
+</resources>

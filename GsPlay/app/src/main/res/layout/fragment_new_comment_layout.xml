@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wangxiaobao.gsj.view.XXXRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="279px"
+            android:layout_height="222px"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_comment_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18px"
+            android:text="商家还没有收到评价~"
+            android:textColor="#BABAC0"
+            android:textSize="42px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add_comment"
+        android:layout_width="204px"
+        android:layout_height="200px"
+        android:layout_marginBottom="24px"
+        android:background="@drawable/btn_comment"
+        android:paddingLeft="55px"
+        android:paddingTop="40px"
+        android:text="我要\n评价"
+        android:textColor="#fff"
+        android:textSize="42px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/goBack"
+        android:layout_width="204px"
+        android:layout_height="200px"
+        android:layout_marginRight="30px"
+        android:layout_marginBottom="24px"
+        android:background="@drawable/btn_comment"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingRight="9px"
+        android:paddingBottom="12px"
+        android:text="返回"
+        android:textColor="#fff"
+        android:textSize="42px"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@id/add_comment"
+        app:layout_constraintTop_toTopOf="@id/add_comment"
+        tools:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>

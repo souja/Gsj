@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42.4dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_tv_login"
+        android:visibility="gone" />
+
+    <com.wangxiaobao.gsj.view.LoginScrollView
+        android:id="@+id/sl_center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="44dp"
+                android:scaleType="center"
+                android:src="@drawable/wang_logo" />
+
+
+            <com.wangxiaobao.gsj.view.RoundTextView
+                android:id="@+id/no_password_tip"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:text="还没有输入密码"
+                android:textColor="#ff5050"
+                android:visibility="invisible"
+                app:corner_size="6dp"
+                app:roundtextview_background="#f3dca6" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/stroke_rectangle_pinkish_color"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_user" />
+
+
+                    <EditText
+                        android:id="@+id/et_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/login_tv_height"
+                        android:background="@null"
+                        android:hint="输入账号"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColorHint="@color/pinkish_grey" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_tv_height"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_password" />
+
+                    <EditText
+                        android:id="@+id/et_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/login_tv_height"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="密码"
+                        android:inputType="textPassword"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text=""
+                        android:textColorHint="@color/pinkish_grey" />
+
+                    <ImageView
+                        android:id="@+id/iv_seepwd"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:src="@drawable/iv_drawable_seepwd" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <!--android:id="@+id/bt_login"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/login_tv_height"-->
+                <!--andrtableNametext="@string/login"-->
+                <!--android:textSize="16sp"-->
+                <!--app:normalBackgroundColor="@color/primary_color"-->
+                <!--app:normalTextColor="@color/white"-->
+                <!--app:pressedBackgroundColor="@color/primary_text_color"-->
+                <!--app:radius="10dp" />-->
+
+                <com.wangxiaobao.gsj.view.StateButton
+
+                    android:id="@+id/bt_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_tv_height"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/table_status_selected"
+                    app:normalBackgroundColor="#1AAD19"
+                    app:normalTextColor="@color/white"
+                    app:pressedBackgroundColor="@color/primary_text_color"
+                    app:radius="10dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp"
+                    android:text="忘记密码?"
+                    android:textColor="#1AAD19" />
+
+                <TextView
+                    android:id="@+id/operation_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp"
+                    android:text="运营登录>"
+                    android:textColor="#1AAD19"
+
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </com.wangxiaobao.gsj.view.LoginScrollView>
+
+
+</LinearLayout>

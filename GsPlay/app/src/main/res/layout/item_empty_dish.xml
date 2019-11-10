@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>
+
+
+
+
+    <ImageView
+        android:id="@+id/check_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check_normal"
+        android:layout_gravity="center_vertical"
+        android:scaleType="center"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        />
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
+
+
+
+        <FrameLayout
+            android:id="@+id/pic_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/divider_color"
+            android:padding="1dp">
+
+            <ImageView
+                android:id="@+id/dish_picture"
+                android:layout_width="@dimen/thumbnail_width"
+                android:layout_height="@dimen/thumbnail_width"
+                android:background="@color/primary_grey"
+                android:scaleType="center"
+                android:src="@drawable/wang_food_sample" />
+
+        </FrameLayout>
+
+
+
+        <TextView
+            android:id="@+id/dish_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/open_menu"
+            android:layout_toRightOf="@id/pic_layout"
+            android:text="巴适串串"
+            android:textColor="@color/black_three"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:id="@+id/price_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dish_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/open_menu"
+            android:layout_toRightOf="@id/pic_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原价"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/sale_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="售价"
+                android:textColor="@color/black_three"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/vip_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会员价"
+                android:textColor="@color/black_three"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price_layout"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/pic_layout">
+
+
+            <TextView
+                android:id="@+id/recommended_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawable_btn_oval_clean"
+                android:drawableLeft="@drawable/icon_recommend_indicator"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="推荐"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/empty_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/drawable_btn_oval_rec_bg_green"
+                android:drawableLeft="@drawable/icon_empty_indicator"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="沽清"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="alertDialogTheme">@style/MyAlertDialogStyle</item>
+    </style>
+
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        //这里不能使用ActionBar；否则Urcrop无法使用
+        <!-- Customize your theme here. -->
+        <!--<item name="colorAccent">@color/primary_color</item>-->
+        <!-- AppCompatEditText默认状态状态设置底线颜色 -->
+        <!--<item name="colorControlNormal">#3F51b5</item>-->
+        <!-- AppCompatEditText选择的底线颜色 -->
+        <item name="colorControlActivated">@color/primary_color</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="dialog_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <!--<style name="GNowProgressBar" parent="SmoothProgressBar">-->
+        <!--<item name="spb_stroke_separator_length">8dp</item>-->
+        <!--<item name="spb_sections_count">2</item>-->
+        <!--<item name="spb_speed">1.7</item>-->
+        <!--<item name="spb_progressiveStart_speed">2</item>-->
+        <!--<item name="spb_progressiveStop_speed">3.4</item>-->
+        <!--<item name="spb_interpolator">spb_interpolator_acceleratedecelerate</item>-->
+        <!--<item name="spb_mirror_mode">true</item>-->
+        <!--<item name="spb_reversed">true</item>-->
+        <!--<item name="spb_colors">@array/gplus_colors</item>-->
+        <!--<item name="spb_progressiveStart_activated">true</item>-->
+        <!--<item name="spb_generate_background_with_colors">false</item>-->
+    <!--</style>-->
+
+    <style name="MaterialSearch" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/primary_color</item>
+        <!-- Used for the title and text -->
+        <!--<item name="android:textColorPrimary">#FFFFFF</item>-->
+        <!-- Used for the background -->
+        <!--<item name="android:background">#4CAF50</item>-->
+    </style>
+
+    <style name="MiddleFont">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ToDayDateStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="smallRoundBtn">
+        <item name="android:background">@drawable/green_stroke_with_radius_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">33px</item>
+        <item name="android:paddingBottom">33px</item>
+        <item name="android:textColor">@color/commit_comment_color</item>
+        <item name="android:textSize">39px</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_commit_comment">
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="0dp"
+        android:layout_height="360px"
+        android:background="@color/new_primary_light_grey_color" />
+
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="120px"
+        android:textColor="@color/font_black"
+        android:textSize="36px"
+        app:layout_constraintLeft_toLeftOf="@id/view_bg"
+        app:layout_constraintTop_toTopOf="@id/view_bg"
+        tools:text="阿迪达斯旗舰店" />
+
+    <LinearLayout
+        android:id="@+id/ll_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60px"
+        android:paddingLeft="30px"
+        android:paddingTop="15px"
+        android:paddingRight="30px"
+        android:paddingBottom="15px"
+        app:layout_constraintBottom_toBottomOf="@id/ll_location"
+        app:layout_constraintRight_toRightOf="@id/view_bg"
+        app:layout_constraintTop_toTopOf="@id/tv_shop_name">
+
+        <ImageView
+            android:layout_width="27px"
+            android:layout_height="28px"
+            android:background="@drawable/icon_switch" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18px"
+            android:includeFontPadding="false"
+            android:text="切换商家"
+            android:textColor="@color/font_black"
+            android:textSize="27px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24px"
+        android:gravity="center_vertical"
+        android:paddingTop="15px"
+        android:paddingBottom="15px"
+        app:layout_constraintLeft_toLeftOf="@id/tv_shop_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_shop_name">
+
+        <ImageView
+            android:layout_width="21px"
+            android:layout_height="30px"
+            android:background="@drawable/icon_location" />
+
+        <TextView
+            android:id="@+id/tv_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9px"
+            android:includeFontPadding="false"
+            android:text="远洋太古里"
+            android:textColor="@color/font_black"
+            android:textSize="30px" />
+
+    </LinearLayout>
+
+
+</merge>

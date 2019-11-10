@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/split_grey_two"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:paddingLeft="12dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:text="取消"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+             />
+
+        <TextView
+            android:id="@+id/actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="输入描述"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/sure"
+            android:textColor="#36c573"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+
+
+
+
+    <com.wangxiaobao.gsj.view.tag.EmojiFilterEditor
+        android:id="@+id/dish_description"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:hint="请输入菜品描述"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/unit"
+        android:textSize="16sp"
+        android:paddingTop="10dp"
+        android:gravity="top"
+        android:textColor="@color/black"
+        android:background="@color/white"
+
+        />
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/pinkish_grey"
+        android:text="菜品说明200个字以内"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.androidkun.PullToRefreshRecyclerView
+        android:id="@+id/refresh_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30px" />
+
+    <TextView
+        android:id="@+id/add_complain"
+        android:layout_width="204px"
+        android:layout_height="200px"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="24px"
+        android:background="@drawable/btn_comment"
+        android:paddingLeft="55px"
+        android:paddingTop="40px"
+        android:text="我要\n投诉"
+        android:textColor="#fff"
+        android:textSize="42px" />
+
+    <TextView
+        android:id="@+id/goBack"
+        android:layout_width="204px"
+        android:layout_height="200px"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="240px"
+        android:layout_marginBottom="24px"
+        android:background="@drawable/btn_comment"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingRight="9px"
+        android:paddingBottom="12px"
+        android:text="返回"
+        android:textColor="#fff"
+        android:textSize="42px"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+</FrameLayout>

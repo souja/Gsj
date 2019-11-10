@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/template_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="菜品橱窗名称"
+        android:textColor="@color/black"
+        android:layout_marginTop="21dp"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/add_template_type_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="请添加你需要展示的菜品"
+        android:textColor="@color/five_grey"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="12sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/category_header"
+        android:layout_width="match_parent"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#262626"
+            android:lineSpacingExtra="0sp"
+            android:id="@+id/category_name"
+            />
+
+        <TextView
+            android:id="@+id/edit_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#19b25a"
+            android:lineSpacingExtra="0sp"
+            android:gravity="end"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/edit_green"
+            android:text="编辑"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

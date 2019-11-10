@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wangxiaobao.gsj.view.LoginScrollView
+        android:id="@+id/sl_center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="44dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_operation_header" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/stroke_rectangle_pinkish_color"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_user" />
+
+
+                    <EditText
+                        android:id="@+id/et_account"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/login_tv_height"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="输入账号"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColorHint="@color/pinkish_grey" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_tv_height"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_password" />
+
+                    <EditText
+                        android:id="@+id/et_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/login_tv_height"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="输入密码"
+                        android:inputType="textPassword"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text=""
+                        android:textColorHint="@color/pinkish_grey" />
+
+                    <ImageView
+                        android:id="@+id/iv_seepwd"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:src="@drawable/iv_drawable_seepwd"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_tv_height"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_merchant" />
+
+                    <EditText
+                        android:id="@+id/operation_account"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/login_tv_height"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="代运营的商家账号"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:textColorHint="@color/pinkish_grey" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <com.wangxiaobao.gsj.view.StateButton
+                    android:id="@+id/bt_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_tv_height"
+                    android:gravity="center"
+                    android:text="@string/login"
+                    android:textSize="16sp"
+                    app:normalBackgroundColor="#1AAD19"
+                    app:normalTextColor="@color/white"
+                    app:pressedBackgroundColor="@color/primary_text_color"
+                    app:radius="10dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+
+                <TextView
+                    android:id="@+id/merchant_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="10dp"
+                    android:text="商家登录"
+                    android:textColor="@color/primary_color"
+
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </com.wangxiaobao.gsj.view.LoginScrollView>
+
+
+</LinearLayout>

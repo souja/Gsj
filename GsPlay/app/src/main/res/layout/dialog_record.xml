@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:background="@color/black"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="99px"
+        android:layout_height="180px"
+        android:layout_marginTop="150px"
+        android:layout_marginRight="60px"
+        android:src="@drawable/icon_close_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_solid_with_radius"
+        app:layout_constraintBottom_toBottomOf="@+id/space"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_close" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150px"
+        android:textColor="@color/commit_comment_color"
+        android:textSize="51px"
+        app:layout_constraintLeft_toLeftOf="@id/view_bg"
+        app:layout_constraintRight_toRightOf="@id/view_bg"
+        app:layout_constraintTop_toTopOf="@id/view_bg"
+        tools:text="按住说话 最多60秒" />
+
+    <com.wangxiaobao.gsj.view.StrokeImageView
+        android:id="@+id/iv_img"
+        android:layout_width="390px"
+        android:layout_height="390px"
+        android:layout_marginTop="120px"
+        android:padding="12px"
+        app:layout_constraintLeft_toLeftOf="@id/view_bg"
+        app:layout_constraintRight_toRightOf="@id/view_bg"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90px"
+        android:textColor="@color/pale_red"
+        android:textSize="33px"
+        tools:text="123123asdf"
+        app:layout_constraintLeft_toLeftOf="@id/view_bg"
+        app:layout_constraintRight_toRightOf="@id/view_bg"
+        app:layout_constraintTop_toBottomOf="@id/iv_img" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space"
+        android:layout_width="0dp"
+        android:layout_height="300px"
+        app:layout_constraintLeft_toLeftOf="@id/view_bg"
+        app:layout_constraintRight_toRightOf="@id/view_bg"
+        app:layout_constraintTop_toBottomOf="@id/iv_img" />
+
+</android.support.constraint.ConstraintLayout>

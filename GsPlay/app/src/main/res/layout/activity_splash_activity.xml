@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wangxiaobao.gsj.view.RecyclerViewBanner
+        android:id="@+id/rv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rvb_indicatorGravity="center"
+        app:rvb_indicatorMargin="36px"
+        app:rvb_indicatorSelectedSrc="@color/primary_color"
+        app:rvb_indicatorSize="8dp"
+        app:rvb_indicatorSpace="8dp"
+        app:rvb_indicatorUnselectedSrc="#ffffff"
+        app:rvb_interval="30000" />
+
+</FrameLayout>

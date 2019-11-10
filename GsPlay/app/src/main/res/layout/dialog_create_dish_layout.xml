@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/dialog_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:gravity="center"
+        android:text="添加菜品"
+        android:textSize="12sp"
+        android:textColor="#888888" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"/>
+
+
+
+    <TextView
+        android:id="@+id/create_dish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:gravity="center"
+        android:text="添加单品"
+        android:textSize="16sp"
+        android:textColor="#323232" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"/>
+
+
+    <TextView
+        android:id="@+id/create_package_dish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:gravity="center"
+        android:text="添加套餐"
+        android:textSize="16sp"
+        android:textColor="#323232" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"/>
+
+</LinearLayout>

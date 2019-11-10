@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_grey"
+    android:orientation="vertical">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:paddingLeft="12dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:text="取消"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="输入价格"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/sure"
+            android:textColor="#36c573"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lv_item_height"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/white"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/sale_price_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="售价:      ¥" />
+
+
+        <com.wangxiaobao.gsj.view.PriceEditor
+            android:id="@+id/sale_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:digits="0123456789."
+            android:textColor="@color/black"
+            android:hint="请输入金额"
+            android:paddingLeft="5dp"
+            android:layout_toRightOf="@+id/sale_price_tip"
+            android:layout_toLeftOf="@+id/sale_price_unit"
+            android:maxLength="8"
+            android:inputType="number" />
+
+
+        <TextView
+            android:id="@+id/sale_price_unit"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:minWidth="@dimen/button_width"
+            android:drawableRight="@drawable/solid_arrow_down"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_height="@dimen/button_height" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lv_item_height"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/vip_price_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:text="会员价:  ¥"/>
+
+
+        <com.wangxiaobao.gsj.view.PriceEditor
+            android:id="@+id/vip_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/vip_price_unit"
+            android:layout_toRightOf="@+id/vip_price_tip"
+            android:background="@null"
+            android:digits="0123456789."
+            android:paddingLeft="5dp"
+            android:maxLength="8"
+            android:hint="请输入金额"
+            android:textColor="@color/black"
+            android:inputType="number" />
+
+
+
+        <TextView
+            android:id="@+id/vip_price_unit"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:minWidth="@dimen/button_width"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_height="@dimen/button_height" />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lv_item_height"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/white"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/dish_price_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:text="原价:      ¥" />
+
+
+        <com.wangxiaobao.gsj.view.PriceEditor
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/old_price_unit"
+            android:layout_toRightOf="@+id/dish_price_indicator"
+            android:background="@null"
+            android:digits="0123456789."
+            android:textColor="@color/black"
+            android:hint="请输入金额"
+            android:maxLength="8"
+            android:paddingLeft="5dp"
+            android:inputType="number" />
+
+
+
+        <TextView
+            android:id="@+id/old_price_unit"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:minWidth="@dimen/button_width"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_height="@dimen/button_height" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

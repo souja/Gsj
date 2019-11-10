@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_tv_size">18sp</dimen>
+    <dimen name="title_tv_size">12sp</dimen>
+    <dimen name="title_tv_login">17.4sp</dimen>
+    <dimen name="table_status_selected">20sp</dimen>
+    <dimen name="lv_item_food_money">18sp</dimen>
+    <dimen name="table_status_not_selected">12sp</dimen>
+    <dimen name="addfood_title_size">13sp</dimen>
+</resources>

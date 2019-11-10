@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="99px"
+        android:layout_height="99px"
+        android:layout_marginStart="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="39px"
+        android:src="@drawable/header_final"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24px"
+        android:text="kgm21"
+        android:textColor="@color/font_black"
+        android:includeFontPadding="false"
+        android:textSize="32px"
+        app:layout_constraintLeft_toRightOf="@id/iv_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_icon" />
+
+    <TextView
+        android:id="@+id/tv_merchant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11px"
+        android:background="@drawable/light_blue_radius_bg"
+        android:paddingLeft="5px"
+        android:paddingTop="2px"
+        android:paddingRight="5px"
+        android:paddingBottom="2px"
+        android:text="新桃园音乐餐厅"
+        android:textColor="@color/white"
+        android:textSize="27px"
+        app:layout_constraintBottom_toBottomOf="@id/tv_user_name"
+        app:layout_constraintLeft_toRightOf="@id/tv_user_name"
+        app:layout_constraintTop_toTopOf="@id/tv_user_name" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="209px"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"
+        android:textSize="32px"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_icon"
+        tools:text="10月11日" />
+
+    <TextView
+        android:id="@+id/phone_number_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15px"
+        android:includeFontPadding="false"
+        android:text="139****6532"
+        android:textColor="@color/black"
+        android:textSize="32px"
+        app:layout_constraintLeft_toLeftOf="@id/tv_user_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_name" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33px"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/tv_user_name"
+        app:layout_constraintRight_toRightOf="@id/time"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon">
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space_voice"
+        android:layout_width="0dp"
+        android:layout_height="33px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_container" />
+
+    <View
+        android:id="@+id/view_bg_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/a"
+        app:layout_constraintBottom_toBottomOf="@id/space_fm"
+        app:layout_constraintLeft_toLeftOf="@id/tv_user_name"
+        app:layout_constraintRight_toRightOf="@id/time"
+        app:layout_constraintTop_toBottomOf="@id/space_voice" />
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32px"
+        android:layout_marginTop="32px"
+        android:layout_marginRight="42px"
+        android:textColor="@color/font_black"
+        android:textSize="32px"
+        app:layout_constraintLeft_toLeftOf="@id/view_bg_1"
+        app:layout_constraintRight_toRightOf="@id/view_bg_1"
+        app:layout_constraintTop_toTopOf="@id/view_bg_1" />
+
+
+    <TextView
+        android:id="@+id/tv_reply_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14px"
+        android:paddingRight="22px"
+        android:textSize="32px"
+        android:textColor="@color/font_black"
+        app:layout_constraintRight_toRightOf="@id/tv_reply"
+        app:layout_constraintTop_toBottomOf="@id/tv_reply" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space_fm"
+        android:layout_width="wrap_content"
+        android:layout_height="22px"
+        app:layout_constraintStart_toStartOf="@id/tv_reply_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reply_date" />
+
+    <ImageView
+        android:id="@+id/view_merchant_bg"
+        android:layout_width="99px"
+        android:layout_height="99px"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="70px"
+        android:background="@drawable/drawable_oval_merchant"
+        app:layout_constraintLeft_toRightOf="@id/view_bg_1"
+        app:layout_constraintTop_toTopOf="@id/view_bg_1" />
+
+    <TextView
+        android:id="@+id/tv_merchant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商家"
+        android:textColor="@color/white"
+        android:textSize="27px"
+        app:layout_constraintBottom_toBottomOf="@id/view_merchant_bg"
+        app:layout_constraintLeft_toLeftOf="@id/view_merchant_bg"
+        app:layout_constraintRight_toRightOf="@id/view_merchant_bg"
+        app:layout_constraintTop_toTopOf="@id/view_merchant_bg" />
+
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17px"
+        android:includeFontPadding="false"
+        android:text="消费者对商家处理的评分"
+        android:textColor="@color/black"
+        android:textSize="32px"
+        app:layout_constraintLeft_toLeftOf="@id/tv_user_name"
+        app:layout_constraintTop_toBottomOf="@id/view_bg_1" />
+
+
+    <com.hedgehog.ratingbar.RatingBar
+        android:id="@+id/rateBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="17px"
+        app:clickable="false"
+        app:halfstart="false"
+        app:layout_constraintLeft_toRightOf="@id/comment"
+        app:layout_constraintTop_toBottomOf="@id/view_bg_1"
+        app:starCount="5"
+        app:starEmpty="@drawable/icon_rating_star_unselected"
+        app:starFill="@drawable/icon_rating_start_selected"
+        app:starImageHeight="40px"
+        app:starImagePadding="4px"
+        app:starImageWidth="40px" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginLeft="33px"
+        android:layout_marginTop="50px"
+        android:background="#DDDDDD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/comment" />
+
+
+    <android.support.constraint.Group
+        android:id="@+id/group_merchant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="comment,rateBar" />
+
+
+</android.support.constraint.ConstraintLayout>
+

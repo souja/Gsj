@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/lv_item_height"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lv_item_height">
+
+        <TextView
+            android:id="@+id/tv_specific_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/lv_item_height"
+            android:gravity="center_vertical"
+            android:text="规格"
+            android:textColor="@color/black_two"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_specific_price"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/lv_item_height"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="¥0"
+            android:textColor="#eb5343"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_specific_update"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/lv_item_height"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/wang_narrow_right_grey"
+            android:gravity="center_vertical"
+            android:text="修改"
+            android:textColor="#eb5343"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</LinearLayout>

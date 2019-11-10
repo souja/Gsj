@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:minHeight="@dimen/lv_item_height">
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@color/primary_color"/>
+
+
+    <TextView
+        android:id="@id/tv_categroy_drag_handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_gravity="center_vertical"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:text="菜品分类"
+        android:textSize="14sp" />
+</LinearLayout>

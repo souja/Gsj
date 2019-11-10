@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.wangxiaobao.gsj.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:right_visibility="false"
+        app:waiter_title="输入验证码" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27dp"
+        android:text="请输入136*****028收到的短信验证码"
+        android:textColor="@color/five_grey"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_forget_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="为确保是你本人操作，请完成手机验证"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_forget_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="我们已发送了验证码到你的手机："
+                android:textColor="@color/five_grey"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/forget_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="136*****028："
+                android:textColor="@color/five_grey"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/verification_code_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="17dp"
+        android:digits="0123456789"
+        android:hint="请输入6位验证码"
+        android:inputType="number"
+        android:maxLength="6">
+
+    </android.support.v7.widget.AppCompatEditText>
+
+
+    <TextView
+        android:id="@+id/get_verification_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        android:text="重新获取(56秒)"
+        android:textColor="@color/five_grey"
+        android:textSize="16sp" />
+
+    <com.wangxiaobao.gsj.view.StateButton
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_tv_height"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="下一步"
+        android:textSize="16sp"
+        app:normalBackgroundColor="@color/pinkish_grey"
+        app:normalTextColor="@color/white"
+        app:pressedBackgroundColor="@color/primary_text_color"
+        app:radius="10dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,343 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="126px"
+        android:background="#5DC758">
+
+        <View
+            android:id="@+id/react"
+            android:layout_width="33px"
+            android:layout_height="33px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33px"
+            android:background="@color/white"
+            android:rotation="45" />
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33px"
+            android:layout_toRightOf="@+id/react"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/actionbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="39px" />
+
+            <TextView
+                android:id="@+id/english_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="30px"
+                tools:text="English Title" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="6px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="36px"
+            android:layout_marginRight="36px"
+            android:layout_toRightOf="@+id/layout_title"
+            android:background="#fff" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/title_bar">
+
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/title_bar"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:layout_alignParentBottom="true"
+        android:background="#dddddd">
+
+        <View
+            android:id="@+id/home_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00A01C"
+            android:gravity="center" />
+
+
+        <View
+            android:id="@+id/card_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00A01C"
+            android:gravity="center"
+            android:visibility="gone" />
+
+
+        <View
+            android:id="@+id/honor_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00A01C"
+            android:gravity="center"
+            android:visibility="gone" />
+
+
+        <View
+            android:id="@+id/advise_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00A01C"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/comment_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00A01C"
+            android:gravity="center" />
+
+
+        <View
+            android:id="@+id/complain_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00A01C"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:layout_alignParentBottom="true">
+
+        <com.wangxiaobao.gsj.view.BottomMenuItem
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:src="@drawable/bg_bottom_bar_home_setting"
+            app:text="首页"
+            app:textColor="@color/menu_text_color_selector"
+            tools:textColor="@color/white" />
+
+        <com.wangxiaobao.gsj.view.BottomMenuItem
+            android:id="@+id/card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            app:src="@drawable/bg_bottom_bar_card_setting"
+            app:text="证照"
+            app:textColor="@color/menu_text_color_selector"
+            tools:textColor="@color/white" />
+
+        <com.wangxiaobao.gsj.view.BottomMenuItem
+            android:id="@+id/honor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:src="@drawable/bg_bottom_bar_honor_setting"
+            app:text="商家介绍"
+            app:textColor="@color/menu_text_color_selector"
+            tools:textColor="@color/white" />
+
+        <com.wangxiaobao.gsj.view.BottomMenuItem
+            android:id="@+id/menu_dish_manager"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            app:src="@drawable/bg_bottom_bar_dish_manager"
+            app:text="推荐"
+            app:textColor="@color/menu_text_color_selector"
+            tools:textColor="@color/white" />
+
+
+        <com.wangxiaobao.gsj.view.BottomMenuItem
+            android:id="@+id/advise"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            app:src="@drawable/bg_bottom_bar_advise_setting"
+            app:text="意见"
+            app:textColor="@color/menu_text_color_selector"
+            tools:textColor="@color/white" />
+
+        <com.wangxiaobao.gsj.view.BottomMenuItem
+            android:id="@+id/comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:src="@drawable/bg_bottom_bar_comment_setting"
+            app:text="评价"
+            app:textColor="@color/menu_text_color_selector"
+            tools:textColor="@color/white" />
+
+
+        <com.wangxiaobao.gsj.view.BottomMenuItem
+            android:id="@+id/complain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:src="@drawable/bg_bottom_bar_complain_setting"
+            app:text="投诉"
+            app:textColor="@color/menu_text_color_selector"
+            tools:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_sjx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="144px"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/home_sjx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/honor_sjx"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/sjx" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15px"
+                android:background="#00A01C" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/honor_sjx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@id/home_sjx"
+            app:layout_constraintRight_toLeftOf="@+id/comment_sjx"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/sjx"
+                tools:background="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15px"
+                android:background="#00A01C" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comment_sjx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@id/honor_sjx"
+            app:layout_constraintRight_toLeftOf="@+id/complain_sjx"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/sjx" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15px"
+                android:background="#00A01C" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/complain_sjx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@id/comment_sjx"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/sjx" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15px"
+                android:background="#00A01C" />
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/bottom_bar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="21px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="144px"
+        android:background="@drawable/drawable_shadow"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+</RelativeLayout>

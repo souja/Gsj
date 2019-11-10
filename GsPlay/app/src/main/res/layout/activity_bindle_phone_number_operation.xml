@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <com.wangxiaobao.gsj.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:right_visibility="false"
+        app:waiter_title="绑定手机号" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="16dp"
+        android:text="为了您的账号安全，请绑定手机号"
+        android:layout_marginTop="27dp"
+        android:layout_height="wrap_content" />
+    
+    
+    
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_marginTop="17dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/stroke_rectangle_corner_5_divider_color_10"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="输入手机号"
+        android:digits="0123456789"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:layout_height="50dp">
+
+    </EditText>
+
+    <com.wangxiaobao.gsj.view.StateButton
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_tv_height"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_marginTop="20dp"
+        android:text="获取验证码"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:pressedBackgroundColor="@color/primary_text_color"
+        app:normalBackgroundColor="@color/primary_color"
+        app:normalTextColor="@color/white"
+        app:radius="10dp" />
+
+
+</LinearLayout>

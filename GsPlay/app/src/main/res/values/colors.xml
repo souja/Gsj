@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="charcoal_grey">#3d4750</color>
+    <color name="pale_red">#db2b2b</color>
+    <color name="tomato">#ef543e</color>
+    <color name="white">@android:color/white</color>
+    <color name="menu_tv_bg">#363f47</color>
+    <color name="divider_color">#e5e5e5</color>
+    <color name="tomato_two">#ea4a39</color>
+    <color name="tomato_three">#e74537</color>
+    <color name="warm_grey">#999999</color>
+    <color name="butterscotch">#ffb44e</color>
+    <color name="lightish_green">#67d77d</color>
+    <color name="white_two">#d8d8d8</color>
+    <color name="split_more">#f6f6f6</color>
+    <color name="black_two">#242424</color>
+    <color name="black">#323232</color>
+    <color name="recommend_grey">#c2c2c2</color>
+    <color name="pinkish_grey">#bbbbbb</color>
+    <color name="white_three">#f4f4f4</color>
+    <color name="black_three">#323232</color>
+    <color name="brownish_grey">#666666</color>
+    <color name="split_grey_two">#f1f1f1</color>
+    <color name="split_grey_three">#e1e1e1</color>
+    <color name="greyish_brown">#424242</color>
+    <color name="grey_two">#d5d5d5</color>
+    <color name="grey_three">#f6f6f6</color>
+    <color name="top_bg">#00607a</color>
+    <color name="primary_color">#36c573</color>
+    <color name="transparent">#00000000</color>
+    <color name="gold">#b89766</color>
+    <color name="grey">#d5d5d5</color>
+    <color name="blue">#0000ff</color>
+    <color name="primary_red">#ff683d</color>
+    <color name="primary_grey">#f1f1f1</color>
+    <color name="primary_text_color">#6cd0b3</color>
+    <color name="menu_bg">#F5F5F5</color>
+    <color name="five_grey">#888888</color>
+    <color name="four_grey">#bebebe</color>
+    <color name="white_five">#55ffffff</color>
+    <color name="six_grey">#f9f9f9</color>
+    <color name="dish_detail_content_color">#525252</color>
+
+
+    <color name="green">#36c573</color>
+    <color name="blue_two">#57b0ff</color>
+    <color name="orange">#ff5d38</color>
+    <color name="light_color">#3340c87a</color>
+    <color name="orangeish">#ff812d</color>
+
+    <color name="table_grey">#cccccc</color>
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+
+    <color name="light_blue">#2196f3</color>
+    <color name="light_green">#46cdb7</color>
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <color name="tag_color">#262626</color>
+
+
+    //================ picker view ===============
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+
+
+    <!--背景色-->
+
+    <color name="new_primary_green_color">#1AAD14</color>
+    <color name="new_primary_red_color">#FF4E34</color>
+    <color name="new_primary_black_color">#343339</color>
+    <color name="new_primary_grey_color">#EFEFF4</color>
+    <color name="new_primary_light_grey_color">#F5F5F5</color>
+
+    <!--字体和字号-->
+    <color name="new_text_black_color">#333333</color>
+    <color name="new_text_red_color">#FF4E34</color>
+    <color name="new_text_blue_color">#0066FF</color>
+    <color name="new_text_grey_color">#999999</color>
+    <color name="new_text_light_grey_color">#BCBCBC</color>
+    <color name="new_text_light_green_color">#1AAD19</color>
+    <!--浅绿色-->
+    <color name="new_text_aqua_green_color">#661AAD19</color>
+
+    <color name="home_bg">#03070C</color>
+    <color name="good_comment">#68B9E4</color>
+    <color name="neutral_comment">#2E80E4</color>
+    <color name="bad">#393EDA</color>
+
+    <color name="raven">#737A8E</color>
+    <color name="big_stone">#1A2440</color>
+    <color name="santas_gray">#9498A4</color>
+    <color name="bunting">#26334D</color>
+
+    <color name="font_black">#323232</color>
+    <color name="comment_light_blue">#7FADE4</color>
+    <color name="deep_green">#00A01C</color>
+
+    <color name="grey_solid_color">#efefef</color>
+    <color name="commit_comment_color">#5DC758</color>
+    <color name="geyser">#C9CED2</color>
+    <color name="map_hint_grey">#808080</color>
+    <color name="alphabet_color">#3a3a3a</color>
+    <color name="shop_alphabet_chosen">#5A6FD7</color>
+
+    <color name="inner_color">#ededed</color>
+    <color name="outer_color">#cecece</color>
+    <color name="storm_dust">#606060</color>
+    <color name="home_complain_text">#AAC7FF </color>
+
+    <color name="trans_60">#99000000</color>
+    <color name="tangaroa">#0F1A37</color>
+</resources>

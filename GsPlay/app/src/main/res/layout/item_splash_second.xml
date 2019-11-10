@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        tools:background=""
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="180px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="78px"
+        android:layout_marginRight="78px"
+        android:layout_gravity="center"
+        android:background="@drawable/icon_splash_fusenmei_button_bg">
+
+        <ImageView
+            android:layout_width="99px"
+            android:layout_height="99px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="36px"
+            android:background="@drawable/icon_splash_fusenmei_click" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:text="欢迎使用成都市消费市场智能服务平台"
+            android:textColor="@color/white"
+            android:textSize="42px" />
+    </LinearLayout>
+
+</FrameLayout>

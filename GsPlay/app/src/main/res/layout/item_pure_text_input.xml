@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_rec_solid_corner_5_grey">
+
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_width="0dp"
+        android:layout_height="210px"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="36px"
+        android:layout_marginRight="90px"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="请输入评价内容，最多200个字"
+        android:maxLength="200"
+        android:maxLines="10"
+        android:textColor="@color/font_black"
+        android:textSize="27px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_marginTop="45px"
+        android:layout_marginBottom="45px"
+        android:background="@color/geyser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/etComment"
+        app:layout_constraintRight_toLeftOf="@id/ll_voice"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_voice"
+        android:layout_width="240px"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/line"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_voice"
+            android:layout_width="33px"
+            android:layout_height="45px"
+            android:background="@drawable/icon_voice" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

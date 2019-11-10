@@ -1,0 +1,79 @@
+<resources>
+
+
+    <declare-styleable name="BottomMenuItem">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="src" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="WaiterTitleBar">
+        <attr name="waiter_title" format="string" />
+        <attr name="right_visibility" format="boolean">
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="roundtextview">
+        <attr name="corner_size"  format="dimension"/>
+        <attr name="roundtextview_background"  format="color|reference"/>
+
+    </declare-styleable>
+    <declare-styleable name="pickerview">
+        <attr name="pickerview_gravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="pickerview_textSize" format="dimension" />
+        <attr name="pickerview_textColorOut" format="color" />
+        <attr name="pickerview_textColorCenter" format="color" />
+        <attr name="pickerview_dividerColor" format="color" />
+    </declare-styleable>
+
+
+    <bool name="pickerview_customTextSize">false</bool>
+
+
+    <declare-styleable name = "dashedline">
+        <attr name = "lineColor" format= "color" />
+    </declare-styleable >
+
+
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+    <dimen name="pickerview_textsize">20sp</dimen>
+
+    <declare-styleable name="LimitScroller">
+        <!--显示的条目数量-->
+        <attr name="limit" format="integer" />
+        <!--滚动速度，比如3000，滚动时间会持续3秒钟-->
+        <attr name="durationTime" format="integer" />
+        <!--滚动间隔，比如5000，滚动完成后停留5秒继续滚动-->
+        <attr name="periodTime" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RecyclerViewBanner">
+        <attr name="rvb_interval" format="integer" />
+        <attr name="rvb_showIndicator" format="boolean" />
+        <attr name="rvb_indicatorSelectedSrc" format="color|reference" />
+        <attr name="rvb_indicatorUnselectedSrc" format="color|reference" />
+        <attr name="rvb_indicatorSize" format="dimension|reference" />
+        <attr name="rvb_indicatorSpace" format="dimension|reference" />
+        <attr name="rvb_indicatorMargin" format="dimension|reference" />
+        <attr name="rvb_indicatorGravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="rvb_autoPlaying" format="boolean" />
+    </declare-styleable>
+</resources>

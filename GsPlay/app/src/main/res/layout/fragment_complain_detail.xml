@@ -1,0 +1,487 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="0dp">
+
+            <!-- TODO: Update blank fragment layout -->
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="360px"
+                android:background="#FFF5F5F5">
+
+                <TextView
+                    android:id="@+id/merchant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="120px"
+                    android:gravity="center"
+                    android:text="阿迪达斯旗舰店"
+                    android:textColor="#323232"
+                    android:textSize="36px"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/ll_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="15px"
+                    android:paddingBottom="15px"
+                    app:layout_constraintLeft_toLeftOf="@id/merchant_name"
+                    app:layout_constraintTop_toBottomOf="@id/merchant_name">
+
+                    <ImageView
+                        android:layout_width="21px"
+                        android:layout_height="30px"
+                        android:background="@drawable/icon_location" />
+
+                    <TextView
+                        android:id="@+id/merchant_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9px"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="远洋太古里"
+                        android:textColor="#323232"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60px"
+                    android:paddingLeft="30px"
+                    android:paddingTop="15px"
+                    android:paddingRight="30px"
+                    android:paddingBottom="15px"
+                    app:layout_constraintBottom_toBottomOf="@id/ll_location"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/merchant_name">
+
+                    <ImageView
+                        android:layout_width="27px"
+                        android:layout_height="28px"
+                        android:background="@drawable/icon_switch" />
+
+                    <TextView
+                        android:id="@+id/merchant_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18px"
+                        android:includeFontPadding="false"
+                        android:text="切换商家"
+                        android:textColor="@color/font_black"
+                        android:textSize="27px" />
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/title_complain_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="45px"
+                android:text="1、请选择投诉类型 *"
+                android:textColor="#FF323232"
+                android:textSize="30px" />
+
+            <RadioGroup
+                android:id="@+id/rg_complainType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="30px"
+                android:layout_marginRight="60px"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_e"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_f"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_g"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_j"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_k"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_l"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+                <RadioButton
+                    android:id="@+id/rb_n"
+                    android:layout_width="match_parent"
+                    android:layout_height="135px"
+                    android:textSize="27px"
+                    android:visibility="gone" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/title_input_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="45px"
+                android:text="2、请填写投诉内容 *"
+                android:textColor="#FF323232"
+                android:textSize="30px" />
+
+            <LinearLayout
+                android:id="@+id/llContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="48px"
+                android:layout_marginRight="60px"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_input_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="45px"
+                android:text="3、请留下您的电话，以便商家及时联系您 *"
+                android:textColor="#FF323232"
+                android:textSize="30px" />
+
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="144px"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="48px"
+                android:layout_marginRight="60px"
+                android:background="@drawable/drawable_rec_solid_corner_5_grey"
+                android:hint="电话号码"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="48px"
+                android:textColor="#FF323232"
+                android:textColorHint="#999999"
+                android:textSize="27px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="45px"
+                android:layout_marginRight="60px"
+                android:text="4、请问您的姓名？*"
+                android:textColor="#FF323232"
+
+                android:textSize="30px" />
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="144px"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="48px"
+                android:layout_marginRight="60px"
+                android:background="@drawable/drawable_rec_solid_corner_5_grey"
+                android:gravity="center_vertical"
+                android:hint="姓名"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:paddingLeft="48px"
+                android:textColor="#FF323232"
+                android:textColorHint="#999999"
+                android:textSize="27px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="45px"
+                android:layout_marginRight="60px"
+                android:text="5、请问您的年龄？*"
+                android:textColor="#FF323232"
+                android:textSize="30px" />
+
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="144px"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="48px"
+                android:layout_marginRight="60px"
+                android:background="@drawable/drawable_rec_solid_corner_5_grey"
+                android:gravity="center_vertical"
+                android:hint="请输入年龄"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingLeft="48px"
+                android:textColor="#FF323232"
+                android:textColorHint="#999999"
+                android:textSize="27px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="45px"
+                android:layout_marginRight="60px"
+                android:text="6、请问您的性别？*"
+                android:textColor="#FF323232"
+                android:textSize="30px" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="144px"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="48px"
+                android:layout_marginRight="60px">
+
+
+                <RelativeLayout
+                    android:id="@+id/man"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/man_selector"
+                    android:drawableLeft="@drawable/man">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/man_iv"
+                            android:layout_width="39px"
+                            android:layout_height="39px"
+                            android:src="@drawable/man" />
+
+                        <TextView
+                            android:id="@+id/man_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:includeFontPadding="false"
+                            android:text="男"
+                            android:textColor="#999"
+                            android:textSize="36px" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/woman"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/woman_selector">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/woman_iv"
+                            android:layout_width="39px"
+                            android:layout_height="39px"
+                            android:src="@drawable/woman_b"
+                            tools:tint="@color/black" />
+
+                        <TextView
+                            android:id="@+id/woman_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:includeFontPadding="false"
+                            android:text="女"
+                            android:textColor="#fff"
+                            android:textSize="36px"
+                            tools:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <com.wangxiaobao.gsj.view.StateButton
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="144px"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="60px"
+                android:layout_marginRight="60px"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="提交投诉"
+                android:textColor="@color/white"
+                android:textSize="@dimen/table_status_selected"
+                app:normalBackgroundColor="#1AAD19"
+                app:normalTextColor="@color/white"
+                app:pressedBackgroundColor="@color/primary_text_color"
+                app:radius="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="36px"
+                android:layout_marginRight="60px"
+                android:layout_marginBottom="90px"
+                android:gravity="center_horizontal"
+                android:text="为了打造良好的消费者环境,\n\n
+本投诉内容会同步给成都市市场监管局。"
+                android:textColor="#FF323232"
+                android:textSize="27px" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_switchBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="90px"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="60px"
+        android:layout_marginBottom="420px"
+        android:background="@drawable/alpha_black_radius_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:paddingTop="15px"
+        android:paddingRight="30px"
+        android:paddingBottom="15px">
+
+        <ImageView
+            android:layout_width="27px"
+            android:layout_height="28px"
+            android:background="@drawable/icon_merchant_switch" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12px"
+            android:includeFontPadding="false"
+            android:text="切换商家"
+            android:textColor="@color/white"
+            android:textSize="27px" />
+
+    </LinearLayout>
+
+</FrameLayout>

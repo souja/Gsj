@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:id="@+id/rl_statusbar"
+    android:layout_height="44dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/menu_tv_leftpadding"
+        android:paddingRight="@dimen/menu_tv_leftpadding">
+
+        <TextView
+            android:id="@+id/tv_status_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/all"
+            android:textColor="@drawable/table_text_status_bg"
+            android:textSize="@dimen/table_status_selected" />
+
+        <TextView
+            android:id="@+id/tv_status_daiqueding"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/table_tv_margin"
+            android:drawableLeft="@drawable/table_drawable_not_sure"
+            android:drawablePadding="@dimen/table_text_drawable_padding"
+            android:text="@string/daiqueding"
+            android:textColor="@drawable/table_text_status_bg"
+            android:textSize="@dimen/table_status_not_selected" />
+
+        <TextView
+            android:id="@+id/tv_status_eating"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/table_tv_margin"
+            android:drawableLeft="@drawable/table_drawable_eating"
+            android:drawablePadding="@dimen/table_text_drawable_padding"
+            android:text="@string/eating"
+            android:textColor="@drawable/table_text_status_bg"
+            android:textSize="@dimen/table_status_not_selected" />
+
+        <TextView
+            android:id="@+id/tv_status_idle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/table_tv_margin"
+            android:drawableLeft="@drawable/table_drawable_idle"
+            android:drawablePadding="@dimen/table_text_drawable_padding"
+            android:text="@string/idle"
+            android:textColor="@drawable/table_text_status_bg"
+            android:textSize="@dimen/table_status_not_selected" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_allwaiter"
+        android:textColor="@drawable/table_drawable_allwaiter_color"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/menu_tv_leftpadding"
+        android:background="@drawable/table_drawable_allwaiter"
+        android:paddingBottom="2dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:drawableRight="@drawable/wang_triangle_1"
+        android:paddingTop="2dp"
+        android:text="@string/all_waiter"
+        android:textSize="@dimen/title_tv_size" />
+
+</RelativeLayout>

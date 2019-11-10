@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/item_merchant_location" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/divider_color"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_bg" />
+
+            <TextView
+                android:id="@+id/tv_introduction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="78px"
+                android:layout_marginTop="48px"
+                android:layout_marginRight="78px"
+                android:textSize="33px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_bg"
+                tools:text="2121212" />
+
+            <TextView
+                android:id="@+id/tv_comment"
+                style="@style/smallRoundBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="54px"
+                android:text="评价"
+                app:layout_constraintLeft_toLeftOf="@id/tv_introduction"
+                app:layout_constraintRight_toLeftOf="@id/tv_complain"
+                app:layout_constraintTop_toBottomOf="@id/tv_introduction" />
+
+            <TextView
+                android:id="@+id/tv_complain"
+                style="@style/smallRoundBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18px"
+                android:text="投诉"
+                app:layout_constraintLeft_toRightOf="@id/tv_comment"
+                app:layout_constraintRight_toLeftOf="@id/tv_credit"
+                app:layout_constraintTop_toTopOf="@id/tv_comment" />
+
+            <TextView
+                android:id="@+id/tv_credit"
+                style="@style/smallRoundBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18px"
+                android:layout_marginRight="78px"
+                android:text="信用情况"
+                app:layout_constraintLeft_toRightOf="@id/tv_complain"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_comment" />
+
+            <ImageView
+                android:id="@+id/iv_introduction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150px"
+                android:adjustViewBounds="true"
+                android:paddingBottom="60px"
+                android:scaleType="fitXY"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_comment"
+                tools:src="@drawable/a" />
+
+            <LinearLayout
+                android:id="@+id/ll_container"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_bg">
+
+                <ImageView
+                    android:layout_width="270px"
+                    android:layout_height="210px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_merchant_introduce_none" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30px"
+                    android:text="暂无主体信息～"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_switchBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="60px"
+        android:layout_marginBottom="420px"
+        android:background="@drawable/alpha_black_radius_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="42px"
+        android:paddingTop="33px"
+        android:paddingRight="42px"
+        android:paddingBottom="33px">
+
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="33px"
+            android:background="@drawable/icon_merchant_switch" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:includeFontPadding="false"
+            android:text="切换商家"
+            android:textColor="@color/white"
+            android:textSize="33px" />
+
+    </LinearLayout>
+
+</FrameLayout>

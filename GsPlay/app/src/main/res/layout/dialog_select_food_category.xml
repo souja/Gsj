@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lv_item_height"
+        android:background="@drawable/drawable_bottom_split_grey"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:text="选择分类"
+        android:textColor="@color/warm_grey"
+        android:textSize="@dimen/table_status_not_selected" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lv_item_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:text="请在以下列表选择分类"
+        android:textColor="@color/warm_grey"
+        android:textSize="@dimen/table_status_not_selected" />
+
+    <ListView
+        android:id="@+id/lv_select_food_category"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content"
+        android:listSelector="#00000000" />
+</LinearLayout>

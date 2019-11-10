@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.wangxiaobao.gsj.view.TitleBar
+        android:id="@+id/titleview_changepwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_color" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_tv_height"
+        android:inputType="textPassword"
+        android:background="@null"
+        android:singleLine="true"
+        android:textColorHint="@color/pinkish_grey"
+        android:id="@+id/et_old_pwd"
+        android:hint="请输入原始密码"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_color" />
+    <EditText
+        android:layout_width="match_parent"
+        android:textColorHint="@color/pinkish_grey"
+        android:layout_height="@dimen/login_tv_height"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:id="@+id/et_re_pwd"
+        android:hint="请输入新密码"
+        android:paddingLeft="@dimen/activity_vertical_margin" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_color" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_tv_height"
+
+        android:id="@+id/et_re_pwd_confirm"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:textColorHint="@color/pinkish_grey"
+        android:singleLine="true"
+        android:hint="确认新密码"
+        android:paddingLeft="@dimen/activity_vertical_margin" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_color" />
+</LinearLayout>

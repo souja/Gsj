@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
+    android:layout_width="1000dp"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:minHeight="50dp"
+    android:text="+ 添加菜品到套餐"
+    android:textColor="@color/primary_color"
+    />

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:text="订单总价"
+            android:textColor="@color/warm_grey"
+            android:textSize="@dimen/title_tv_size" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|right"
+            android:id="@+id/tv_ordered_footer_total"
+            android:text="¥48"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:textColor="@color/tomato_two"
+            android:textSize="@dimen/lv_item_food_money" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:text="优惠"
+            android:textColor="@color/warm_grey"
+            android:textSize="@dimen/title_tv_size" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_ordered_footer_benefit"
+            android:gravity="center_vertical|right"
+            android:text="¥26"
+            android:textColor="@color/tomato_two"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/lv_item_food_money" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:text="需付"
+            android:textColor="@color/black_three"
+            android:textSize="@dimen/title_tv_size" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_ordered_footer_pay"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="¥26"
+            android:textColor="@color/tomato_two"
+            android:textSize="@dimen/lv_item_food_money" />
+    </RelativeLayout>
+</LinearLayout>

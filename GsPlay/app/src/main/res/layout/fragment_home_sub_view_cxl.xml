@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/icon_frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_comment_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:gravity="center"
+        android:text="消费者评价情况"
+        android:textColor="@color/white"
+        android:textSize="27px"
+        app:layout_constraintLeft_toLeftOf="@+id/pie_view"
+        app:layout_constraintRight_toRightOf="@+id/pie_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.razerdp.widget.animatedpieview.AnimatedPieView
+        android:id="@+id/pie_view"
+        android:layout_width="189px"
+        android:layout_height="189px"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="24px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_comment_status"
+        tools:background="@color/green" />
+
+    <com.wangxiaobao.gsj.view.CircleView
+        android:layout_width="111px"
+        android:layout_height="111px"
+        app:layout_constraintBottom_toBottomOf="@id/pie_view"
+        app:layout_constraintLeft_toLeftOf="@id/pie_view"
+        app:layout_constraintRight_toRightOf="@id/pie_view"
+        app:layout_constraintTop_toTopOf="@id/pie_view"
+        tools:background="@color/white" />
+
+    <View
+        android:id="@+id/view_good"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_marginLeft="36px"
+        android:layout_marginTop="24px"
+        android:background="@color/good_comment"
+        app:layout_constraintLeft_toLeftOf="@id/pie_view"
+        app:layout_constraintTop_toBottomOf="@id/pie_view" />
+
+    <View
+        android:id="@+id/view_neutral"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_marginTop="9px"
+        android:background="@color/neutral_comment"
+        app:layout_constraintLeft_toLeftOf="@id/view_good"
+        app:layout_constraintTop_toBottomOf="@id/view_good" />
+
+    <View
+        android:id="@+id/view_bad"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_marginTop="9px"
+        android:background="@color/bad"
+        app:layout_constraintLeft_toLeftOf="@id/view_good"
+        app:layout_constraintTop_toBottomOf="@id/view_neutral" />
+
+    <TextView
+        android:id="@+id/tv_good_comment_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12px"
+        android:includeFontPadding="false"
+        android:text="好评：0"
+        android:textColor="@color/white"
+        android:textSize="24px"
+        app:layout_constraintBottom_toBottomOf="@id/view_good"
+        app:layout_constraintLeft_toRightOf="@id/view_good"
+        app:layout_constraintTop_toTopOf="@id/view_good" />
+
+    <TextView
+        android:id="@+id/tv_neutral_comment_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中评：0"
+        android:textColor="@color/white"
+        android:textSize="24px"
+        app:layout_constraintBottom_toBottomOf="@id/view_neutral"
+        app:layout_constraintLeft_toLeftOf="@id/tv_good_comment_number"
+        app:layout_constraintTop_toTopOf="@id/view_neutral" />
+
+    <TextView
+        android:id="@+id/tv_bad_comment_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="差评：0"
+        android:textColor="@color/white"
+        android:textSize="24px"
+        app:layout_constraintBottom_toBottomOf="@id/view_bad"
+        app:layout_constraintLeft_toLeftOf="@id/tv_good_comment_number"
+        app:layout_constraintTop_toTopOf="@id/view_bad" />
+
+
+    <TextView
+        android:id="@+id/tv_complain_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66px"
+        android:gravity="center"
+        android:text="消费者投诉情况"
+        android:textColor="@color/white"
+        android:textSize="27px"
+        app:layout_constraintLeft_toLeftOf="@id/pie_view"
+        app:layout_constraintTop_toBottomOf="@id/view_bad" />
+
+    <ImageView
+        android:id="@+id/iv_male"
+        android:layout_width="69px"
+        android:layout_height="177px"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="30px"
+        android:src="@drawable/icon_male"
+        app:layout_constraintLeft_toLeftOf="@id/pie_view"
+        app:layout_constraintTop_toBottomOf="@id/tv_complain_status" />
+
+    <ImageView
+        android:id="@+id/iv_female"
+        android:layout_width="69px"
+        android:layout_height="177px"
+        android:layout_marginLeft="45px"
+        android:src="@drawable/icon_female"
+        app:layout_constraintLeft_toRightOf="@id/iv_male"
+        app:layout_constraintTop_toTopOf="@id/iv_male" />
+
+    <TextView
+        android:id="@+id/tv_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24px"
+        android:text="男"
+        android:textColor="@color/white"
+        android:textSize="27px"
+        app:layout_constraintLeft_toLeftOf="@id/iv_male"
+        app:layout_constraintRight_toRightOf="@id/iv_male"
+        app:layout_constraintTop_toBottomOf="@id/iv_male" />
+
+    <TextView
+        android:id="@+id/tv_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="女"
+        android:textColor="@color/white"
+        android:textSize="27px"
+        app:layout_constraintLeft_toLeftOf="@id/iv_female"
+        app:layout_constraintRight_toRightOf="@id/iv_female"
+        app:layout_constraintTop_toTopOf="@id/tv_male" />
+
+    <TextView
+        android:id="@+id/tv_male_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21px"
+        android:text="0 人"
+        android:textColor="@color/white"
+        android:textSize="27px"
+        app:layout_constraintLeft_toLeftOf="@id/iv_male"
+        app:layout_constraintRight_toRightOf="@id/iv_male"
+        app:layout_constraintTop_toBottomOf="@id/tv_male" />
+
+    <TextView
+        android:id="@+id/tv_male_number_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6px"
+        android:text="0%"
+        android:textColor="@color/good_comment"
+        android:textSize="27px"
+        app:layout_constraintLeft_toLeftOf="@id/iv_male"
+        app:layout_constraintRight_toRightOf="@id/iv_male"
+        app:layout_constraintTop_toBottomOf="@id/tv_male_number" />
+
+
+    <TextView
+        android:id="@+id/tv_female_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 人"
+        android:textColor="@color/white"
+        android:textSize="27px"
+        app:layout_constraintLeft_toLeftOf="@id/iv_female"
+        app:layout_constraintRight_toRightOf="@id/iv_female"
+        app:layout_constraintTop_toTopOf="@id/tv_male_number" />
+
+    <TextView
+        android:id="@+id/tv_female_number_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textColor="@color/good_comment"
+        android:textSize="27px"
+        app:layout_constraintLeft_toLeftOf="@id/iv_female"
+        app:layout_constraintRight_toRightOf="@id/iv_female"
+        app:layout_constraintTop_toTopOf="@id/tv_male_number_rate" />
+
+    <LinearLayout
+        android:id="@+id/view_frame_0"
+        android:layout_width="0dp"
+        android:layout_height="135px"
+        android:layout_marginLeft="42px"
+        android:background="@drawable/icon_frame_small"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@id/iv_female"
+        app:layout_constraintRight_toLeftOf="@+id/view_frame_1"
+        app:layout_constraintTop_toTopOf="@id/tv_comment_status">
+
+        <TextView
+            android:id="@+id/tv_comment_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            tools:text="57条" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12px"
+            android:text="近一个月评价数量"
+            android:textColor="@color/raven"
+            android:textSize="27px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_frame_1"
+        android:layout_width="0dp"
+        android:layout_height="135px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/icon_frame_small"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@id/view_frame_0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_comment_status">
+
+        <TextView
+            android:id="@+id/tv_comment_average_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            tools:text="4.9分" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12px"
+            android:text="商圈平均评价分数"
+            android:textColor="@color/raven"
+            android:textSize="27px" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_frame_3"
+        android:layout_width="0dp"
+        android:layout_height="60px"
+        android:layout_marginTop="30px"
+        android:background="@color/big_stone"
+        app:layout_constraintLeft_toLeftOf="@id/view_frame_0"
+        app:layout_constraintRight_toRightOf="@id/view_frame_1"
+        app:layout_constraintTop_toBottomOf="@id/view_frame_0" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="57px"
+        android:text="评价时间"
+        android:textColor="@color/santas_gray"
+        android:textSize="27px"
+        app:layout_constraintBottom_toBottomOf="@id/view_frame_3"
+        app:layout_constraintLeft_toLeftOf="@id/view_frame_3"
+        app:layout_constraintTop_toTopOf="@id/view_frame_3" />
+
+    <TextView
+        android:id="@+id/tv_comment_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="评价内容"
+        android:textColor="@color/santas_gray"
+        android:textSize="27px"
+        app:layout_constraintBottom_toBottomOf="@id/view_frame_3"
+        app:layout_constraintLeft_toRightOf="@id/time"
+        app:layout_constraintRight_toRightOf="@id/view_frame_3"
+        app:layout_constraintTop_toTopOf="@id/view_frame_3" />
+
+    <View
+        android:id="@+id/view_frame_4"
+        android:layout_width="0dp"
+        android:layout_height="168px"
+        android:background="@color/bunting"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/view_frame_0"
+        app:layout_constraintRight_toRightOf="@id/view_frame_1"
+        app:layout_constraintTop_toBottomOf="@id/view_frame_3" />
+
+    <com.wangxiaobao.gsj.view.LimitScrollerView
+        android:id="@+id/comment_scroller_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="@id/view_frame_4"
+        app:layout_constraintRight_toRightOf="@id/view_frame_4"
+        app:layout_constraintTop_toTopOf="@id/view_frame_4"
+        app:layout_constraintBottom_toBottomOf="@id/view_frame_4"
+        app:limit="3"
+        app:periodTime="3000" />
+
+    <LinearLayout
+        android:id="@+id/comment_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/comment_scroller_view"
+        app:layout_constraintRight_toRightOf="@id/comment_scroller_view"
+        app:layout_constraintTop_toTopOf="@id/comment_scroller_view" />
+
+    <LinearLayout
+        android:id="@+id/view_frame_5"
+        android:layout_width="0dp"
+        android:layout_height="135px"
+        android:background="@drawable/icon_frame_small"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/view_frame_0"
+        app:layout_constraintRight_toRightOf="@+id/view_frame_0"
+        app:layout_constraintTop_toTopOf="@id/tv_complain_status">
+
+        <TextView
+            android:id="@+id/tv_complain_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            app:layout_constraintLeft_toLeftOf="@id/view_frame_5"
+            app:layout_constraintRight_toRightOf="@id/view_frame_5"
+            app:layout_constraintTop_toTopOf="@id/view_frame_5"
+            tools:text="57条" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="近一个月投诉数量"
+            android:textColor="@color/raven"
+            android:textSize="27px"
+            app:layout_constraintLeft_toLeftOf="@id/view_frame_5"
+            app:layout_constraintRight_toRightOf="@id/view_frame_5"
+            app:layout_constraintTop_toBottomOf="@id/tv_complain_numbers" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_frame_6"
+        android:layout_width="0dp"
+        android:layout_height="135px"
+        android:background="@drawable/icon_frame_small"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/view_frame_1"
+        app:layout_constraintRight_toRightOf="@id/view_frame_1"
+        app:layout_constraintTop_toTopOf="@id/view_frame_5">
+
+        <TextView
+            android:id="@+id/tv_complain_average_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            app:layout_constraintLeft_toLeftOf="@id/view_frame_6"
+            app:layout_constraintRight_toRightOf="@id/view_frame_6"
+            app:layout_constraintTop_toTopOf="@id/view_frame_6"
+            tools:text="5.0分" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12px"
+            android:text="投诉处理结果评分"
+            android:textColor="@color/raven"
+            android:textSize="27px"
+            app:layout_constraintLeft_toLeftOf="@id/view_frame_1"
+            app:layout_constraintRight_toRightOf="@id/view_frame_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_complain_average_numbers" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_frame_7"
+        android:layout_width="0dp"
+        android:layout_height="60px"
+        android:layout_marginTop="30px"
+        android:background="@color/big_stone"
+        app:layout_constraintLeft_toLeftOf="@id/view_frame_0"
+        app:layout_constraintRight_toRightOf="@id/view_frame_1"
+        app:layout_constraintTop_toBottomOf="@id/view_frame_6" />
+
+    <TextView
+        android:id="@+id/complain_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="投诉时间"
+        android:textColor="@color/santas_gray"
+        android:textSize="27px"
+        app:layout_constraintBottom_toBottomOf="@id/view_frame_7"
+        app:layout_constraintLeft_toLeftOf="@id/time"
+        app:layout_constraintTop_toTopOf="@id/view_frame_7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="投诉内容"
+        android:textColor="@color/santas_gray"
+        android:textSize="27px"
+        app:layout_constraintBottom_toBottomOf="@id/view_frame_7"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_comment_content"
+        app:layout_constraintRight_toRightOf="@id/view_frame_7"
+        app:layout_constraintTop_toTopOf="@id/view_frame_7" />
+
+    <View
+        android:id="@+id/view_frame_8"
+        android:layout_width="0dp"
+        android:layout_height="168px"
+        android:background="@color/bunting"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/view_frame_0"
+        app:layout_constraintRight_toRightOf="@id/view_frame_1"
+        app:layout_constraintTop_toBottomOf="@id/view_frame_7" />
+
+    <com.wangxiaobao.gsj.view.LimitScrollerView
+        android:id="@+id/complain_scroller_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="@id/view_frame_8"
+        app:layout_constraintRight_toRightOf="@id/view_frame_8"
+        app:layout_constraintTop_toTopOf="@id/view_frame_8"
+        app:layout_constraintBottom_toBottomOf="@id/view_frame_8"
+        app:limit="3"
+        app:periodTime="3000" />
+
+    <LinearLayout
+        android:id="@+id/complain_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/complain_scroller_view"
+        app:layout_constraintRight_toRightOf="@id/complain_scroller_view"
+        app:layout_constraintTop_toTopOf="@id/complain_scroller_view" />
+
+
+</android.support.constraint.ConstraintLayout>
